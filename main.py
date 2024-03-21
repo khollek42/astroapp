@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 from key import key
 
-api_key = API_KEY
+api_key = st.secrets["API_KEY"]
 
 # Get astro image of the day
 response = requests.get(f"https://api.nasa.gov/planetary/apod?api_key={api_key}")
