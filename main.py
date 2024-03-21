@@ -1,6 +1,5 @@
 import streamlit as st
 import requests
-from key import key
 
 api_key = st.secrets["API_KEY"]
 
